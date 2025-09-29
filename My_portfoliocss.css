@@ -1,0 +1,157 @@
+/* Reset and base styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #5563DE;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.Hero-Text {
+    max-width: 500px;
+}
+
+.Hero img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Project Grid*/
+
+#projects {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Skills Section*/
+
+#Skills {
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.Skills-List {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.Skills {
+    background: #5563DE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Contact Form*/
+
+#Contact {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+input,textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #5563DE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 768px){
+    .Hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Hero img {
+        margin-top: 20px;
+    }
+}
